@@ -103,11 +103,12 @@ header > h1{
 
 .search-content > input::placeholder{
   color: var(--ff-dark);
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.15rem;
 }
 
 .search-content > input:focus{
   outline: none;
+
 }
 
 .search-content > button {
@@ -131,7 +132,6 @@ header > h1{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  letter-spacing: 0.2rem;
   font-weight: 600;
 }
 
@@ -195,10 +195,17 @@ footer > p > a{
   text-decoration: underline;
 }
 
+.error,
+.city,
+.temp{
+  letter-spacing: 0.2rem;
+
+}
+
 @media (min-width:700px) {
   .card{
-    width: 32rem;
-    grid-template-columns: repeat(2, 1fr);
+    width: 35rem;
+    grid-template-columns: 1fr 2fr;
     place-content: center;
   }
 
