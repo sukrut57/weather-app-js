@@ -1,0 +1,214 @@
+@import url(fonts/fonts.css);
+
+:root {
+  --ff-light: hsl(0, 0%, 100%);
+  --ff-blue:hsl(220, 60%, 51%);
+  --ff-dark:hsl(0, 0%, 42%);
+  --background-color-dark:	hsl(0, 0%, 13%);
+  --background-color-light: linear-gradient(135deg,#00feba,#5b548a);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  text-align: center;
+}
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  place-content: center;
+  display: grid;
+  gap: 1rem;
+  background-color: var(--background-color-dark);
+  color: var(--ff-light);
+
+}
+
+/*Css for Header*/
+header > h1{
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.5rem;
+ 
+}
+
+/** CSS for Main */
+.card {
+  background: linear-gradient(135deg,#00feba,#5b548a);
+  width:22rem;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  display: grid;
+  gap: 1rem;
+  place-content: center;
+}
+  
+.search-content > input{
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0,0.2);
+  border:none
+}
+
+.search-content > input::placeholder{
+  color: var(--ff-dark);
+  letter-spacing: 0.1rem;
+}
+
+.search-content > input:focus{
+  outline: none;
+}
+
+.search-content > button {
+  padding:5px 10px;
+  border-radius: 35px;
+  margin-left: 0.5rem;
+  border: none;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0,0.2); 
+}
+
+.search-content > button:hover{
+  background-color: var(--ff-dark);
+  color: var(--ff-light);
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.weather{
+  display: flex;
+  min-height: 400px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+}
+
+.image img{
+  width: 100%;
+  object-fit: contain;
+}
+
+/*css for content*/
+.content div:first-child{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.content div:last-child{
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+/*css for flex items*/
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  text-align: center;
+}
+
+.flex .span>div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.flex .span img{
+  width: 15px; 
+}
+
+.flex .span> p{
+  font-size: 0.925rem;
+  letter-spacing: normal;
+}
+
+
+/* CSS for Footer*/
+footer > p{
+  text-align: center;
+  color: var(--ff-light);
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+footer > p > a{
+  color: var(--ff-blue);
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+
+@media screen and (orientation: landscape) and (max-width: 1000px){
+  body{
+    padding-top: 15em;
+  }
+ 
+}
+
+
+/*conditional styling*/
+.weather{
+  display: none;
+}
+
+.error{
+  display: none;
+}

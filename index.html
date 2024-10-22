@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <main>
+        <div class="card">
+            <div class="search-content">
+                <input type="text" placeholder="Enter City Name" spellcheck="false">
+                <button id="submit">Search</button>
+            </div>
+
+            <div class="error">Please enter a valid city name</div>
+
+            <div class="weather">
+               
+                <div class="image">
+                    <img src="assets/images/clouds.png" alt="" class="weather-icon">
+                </div>
+               
+                <div class="content">
+                    <div class="temp">temp</div>
+                    <div class="city">City</div>
+                </div>
+            
+                <div class="flex">
+                    <div class="span">
+                        <div>
+                            <img src="assets/images/humidity.png" alt="">
+                            <p class="humidity">Humidity</p>
+                        </div>
+                        <p>Humidity</p>
+                    </div>
+
+                    <div class="span">
+                        <div>
+                            <img src="assets/images/wind.png" alt="">
+                            <p class="wind">18km/hr</p>
+                        </div>
+                        <p>Wind Speed</p>
+                    </div>
+
+                </div>
+            
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Coded By <a href="">Sukrut K Pasumarthi</a> <span>&copy; 2020 Weather App</span></p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
