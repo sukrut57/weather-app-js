@@ -195,6 +195,20 @@ footer > p > a{
   text-decoration: underline;
 }
 
+@media (min-width:700px) {
+  .card{
+    width: 32rem;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+  }
+
+  .search-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
 
 @media screen and (orientation: landscape) and (max-width: 1000px){
   body{
@@ -202,7 +216,6 @@ footer > p > a{
   }
  
 }
-
 
 /*conditional styling*/
 .weather{
